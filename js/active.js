@@ -27,26 +27,11 @@
       }
     });
 
-    /*==============================================
-		Mobile Menu
-	================================================*/
-    var $offcanvasNav = $("#offcanvas-menu a");
-    $offcanvasNav.on("click", function () {
-      var link = $(this);
-      var closestUl = link.closest("ul");
-      var activeLinks = closestUl.find(".active");
-      var closestLi = link.closest("li");
-      var linkStatus = closestLi.hasClass("active");
-      var count = 0;
-
-      closestUl.find("ul").slideUp(function () {
-        if (++count == closestUl.find("ul").length)
-          activeLinks.removeClass("active");
-      });
-      if (!linkStatus) {
-        closestLi.children("ul").slideDown();
-        closestLi.addClass("active");
-      }
+    /*==============================================================================
+			CounterUp JS
+		================================================================================*/
+    $(".counter").counterUp({
+      time: 1000,
     });
 
     /*==============================================
@@ -92,7 +77,44 @@
   /*==================================================
 		Preloader JS
 	====================================================*/
-  $(window).on("load", function (event) {
-    $("#preloader").delay(800).fadeOut(500);
-  });
+  function loader() {
+    $(window).on("load", function () {
+      $("#ctn-preloader").addClass("loaded");
+      $("#loading").fadeOut(500);
+      // Una vez haya terminado el preloader aparezca el scroll
+
+      if ($("#ctn-preloader").hasClass("loaded")) {
+        // Es para que una vez que se haya ido el preloader se elimine toda la seccion preloader
+        $("#preloader")
+          .delay(900)
+          .queue(function () {
+            $(this).remove();
+          });
+      }
+    });
+  }
+  loader();
 })(jQuery);
+
+/*=====================================================
+	Dark Light JS
+========================================================*/
+(function () {
+  let onpageLoad = localStorage.getItem("theme") || "";
+  let element = document.body;
+  element.classList.add(onpageLoad);
+  document.getElementById("theme").textContent =
+    localStorage.getItem("theme") || "dark";
+})();
+
+function themeToggle() {
+  let element = document.body;
+  element.classList.toggle("light-theme");
+
+  let theme = localStorage.getItem("theme");
+  if (theme && theme === "light-theme") {
+    localStorage.setItem("theme", "");
+  } else {
+    localStorage.setItem("theme", "light-theme");
+  }
+}

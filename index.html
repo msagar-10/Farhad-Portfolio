@@ -12,7 +12,7 @@
     />
 
     <!-- Site Title -->
-    <title>Romo - HTML5 Bootstrap Template.</title>
+    <title>Farhad Graphics - Next Gen Designer.</title>
 
     <!-- Fav Icon -->
     <link rel="icon" href="img/favicon.png" />
@@ -21,9 +21,12 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!-- Animate CSS -->
     <link rel="stylesheet" href="css/animate.min.css" />
-    <!-- Ui Icons -->
-    <link rel="stylesheet" href="css/icofont.css" />
-
+    <!-- FancyBox CSS -->
+    <link rel="stylesheet" href="css/fancybox.css" />
+    <!-- Uicons CSS -->
+    <link rel="stylesheet" href="css/uicons.css" />
+    <!-- BackToTop CSS -->
+    <link rel="stylesheet" href="css/backToTop.css" />
     <!-- Main CSS -->
     <link rel="stylesheet" href="style.css" />
 
@@ -42,229 +45,562 @@
       </p>
     <![endif]-->
 
-    <!-- preloader -->
+    <!-- Scrool Top -->
+    <!-- <a href="#" class="scrollToTop"><i class="icofont-long-arrow-up"></i></a> -->
+
+    <!-- preloader  -->
     <div id="preloader">
-      <div id="loading-center">
+      <div id="ctn-preloader" class="ctn-preloader">
+        <div class="animation-preloader">
+          <div class="spinner"></div>
+        </div>
         <div class="loader">
-          <div class="loader-outter"></div>
-          <div class="loader-inner"></div>
+          <div class="row">
+            <div class="col-3 loader-section section-left">
+              <div class="bg"></div>
+            </div>
+            <div class="col-3 loader-section section-left">
+              <div class="bg"></div>
+            </div>
+            <div class="col-3 loader-section section-right">
+              <div class="bg"></div>
+            </div>
+            <div class="col-3 loader-section section-right">
+              <div class="bg"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <!-- preloader-end -->
+    <!-- preloader end -->
 
-    <!-- Mobile Menu Modal -->
-    <div class="modal offcanvas-modal fade" id="offcanvas-modal">
-      <div class="modal-dialog offcanvas-dialog">
-        <div class="modal-content">
-          <div class="modal-header offcanvas-header">
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            >
-              <i class="icofont-close-line"></i>
-            </button>
-          </div>
-          <!-- offcanvas-logo-start -->
-          <!-- <div class="offcanvas-logo">
-            <img src="img/logo.svg" alt="#" />
-          </div> -->
-          <!-- offcanvas-logo-end -->
-          <!-- offcanvas-menu start -->
-          <nav id="offcanvas-menu" class="offcanvas-menu">
-            <ul class="list-none">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-            <div class="offcanvas-btn">
-              <a href="#" class="theme-btn">Sign up</a>
-            </div>
-          </nav>
-          <!-- offcanvas-menu end -->
-        </div>
-      </div>
-    </div>
-    <!-- End Mobile Menu Modal -->
-
-    <!-- Header Area -->
-    <header id="active-sticky" class="header-area">
+    <section class="profile-area">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 offset-lg-6 col-md-6 offset-md-6 col-12">
-            <div class="header-menu">
-              <ul class="header-menu-list">
-                <li class="home-list"><a href="index.html">Home</a></li>
-                <li class="contact-list"><a href="#">Contact</a></li>
-              </ul>
-              <div class="header-btn">
-                <a href="#" class="theme-btn">Sign up</a>
+          <div class="col-12">
+            <div class="profile-main">
+              <div
+                class="dark-light-toggle theme-switch"
+                onclick="themeToggle()"
+              ></div>
+              <div class="profile-image">
+                <img src="img/farhad-profile-picture.svg" alt="#" />
               </div>
-            </div>
-          </div>
-          <div class="col-auto">
-            <button
-              type="button"
-              class="offcanvas-toggler"
-              data-bs-toggle="modal"
-              data-bs-target="#offcanvas-modal"
-            >
-              <span class="line"></span>
-              <span class="line"></span>
-              <span class="line"></span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- End Header Area -->
-
-    <!-- Hero Area -->
-    <section class="hero-area">
-      <div class="hero-shape">
-        <img class="shape-1" src="img/hero-area-img/shape-1.svg" alt="#" />
-        <img class="shape-2" src="img/hero-area-img/shape-2.svg" alt="#" />
-        <img class="shape-3" src="img/hero-area-img/shape-3.svg" alt="#" />
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-12">
-            <div class="hero-content">
-              <h1 class="hero-content-title">
-                <span>Unforgettable</span><br />
-                stories await!
-              </h1>
-              <p class="hero-content-text">
-                It’s the fun new way to spend time together and get to know each
-                other.
-              </p>
-              <ul class="hero-content-list">
-                <li>
-                  <img src="img/hero-area-img/check-icon.svg" alt="#" />Talkies
-                  brings two people together through stories.
-                </li>
-                <li>
-                  <img src="img/hero-area-img/check-icon.svg" alt="#" />Based on
-                  decisions that you and your partner
-                </li>
-                <li>
-                  <img src="img/hero-area-img/check-icon.svg" alt="#" />Pick a
-                  story, connect with your partner from anywhere.
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-6 col-12 pd-none-reponsive">
-            <div class="hero-img-right">
-              <div class="hero-img">
-                <img src="img/hero-area-img/hero-img.svg" alt="#" />
+              <div class="profile-content">
+                <h3 class="profile-name">Nur Farhad</h3>
+                <p class="profile-tag">Next Gen Designer</p>
+                <div class="profile-social">
+                  <ul class="profile-social-list">
+                    <li>
+                      <a href="#" target="_blank"
+                        ><img src="img/social-icon/linkedin.svg" alt="#"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank"
+                        ><img src="img/social-icon/behance.svg" alt="#"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank"
+                        ><img src="img/social-icon/dribble.svg" alt="#"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank"
+                        ><img src="img/social-icon/instagram.svg" alt="#"
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- End Hero Area -->
 
-    <!-- Call Action Area -->
-    <section class="call-action-area">
-      <div class="call-action-shape-left">
-        <img class="shape-1" src="img/call-action-shape/shape-1.svg" alt="#" />
-        <img class="shape-2" src="img/call-action-shape/shape-2.svg" alt="#" />
-      </div>
-      <div class="call-action-shape-right">
-        <img class="shape-3" src="img/call-action-shape/shape-3.svg" alt="#" />
-        <img class="shape-4" src="img/call-action-shape/shape-4.svg" alt="#" />
-      </div>
+    <section class="funfact-area">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-12">
-            <div class="call-action-content">
-              <h1 class="call-action-cont-title">
-                <span class="border-line line-1"
-                  >Talkies is the co-storytelling</span
-                >
-                <br /><span class="border-line line-2"
-                  >app for you and a friend.</span
-                >
-              </h1>
-              <p class="call-action-cont-text">
-                From customising our unique characters to guiding them through a
-                story adventure, it’s the fun new way to spend time together and
-                get to know each other.
+          <div class="col-lg-4 col-md-4 col-12">
+            <div class="single-funfact">
+              <h6 class="funfact-counter"><span class="counter">5</span>+</h6>
+              <p class="single-funfact-text">
+                Years of<br />
+                work experience
               </p>
-              <p class="call-action-cont-text m-0">
-                Talkies brings two people together through interactive stories.
-                With Talkies, every story is different, because the narrative
-                unfolds based on decisions that you and your partner make
-                together. So, pick a story, connect with your partner from
-                anywhere, and let the adventure begin!
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12">
+            <div class="single-funfact">
+              <h6 class="funfact-counter"><span class="counter">30</span>+</h6>
+              <p class="single-funfact-text">
+                Annually <br />completed projects
               </p>
-              <div class="call-action-cont-btn">
-                <a href="#" class="theme-btn">Talkies is coming soon on ios</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12">
+            <div class="single-funfact">
+              <h6 class="funfact-counter"><span class="counter">10</span>+</h6>
+              <p class="single-funfact-text">
+                Annually <br />satisfied customers
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="about-section-inner">
+              <p class="about-section-text">
+                Creative individual who specializes in anything related to
+                visualization. Mostly experience in Logo Design and Branding.
+                Skills include experience in Adobe creative cloud suite, Brand
+                identity design, Brand visualization, Photo manipulation, Motion
+                graphics etc.
+              </p>
+              <div class="about-section-buttons">
+                <a href="#contact" class="theme-btn">Contact me</a>
+                <a
+                  href="cv/farhad-cv.pdf"
+                  target="_blank"
+                  download
+                  class="theme-btn btn-white"
+                  >Resume<img src="img/download-icon.svg" alt="#"
+                /></a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- End Call Action Area -->
 
-    <!-- Coming Soon Area -->
-    <section class="coming-soon-area">
-      <div class="coming-soon-shape-left">
-        <img class="shape-1" src="img/coming-soon-shape/shape-1.svg" alt="#" />
-        <img class="shape-2" src="img/coming-soon-shape/shape-2.svg" alt="#" />
-        <img class="shape-3" src="img/coming-soon-shape/shape-3.svg" alt="#" />
-      </div>
-      <div class="coming-soon-shape-middle">
-        <img class="shape-6" src="img/coming-soon-shape/shape-6.svg" alt="#" />
-        <img class="shape-7" src="img/coming-soon-shape/shape-7.svg" alt="#" />
-        <img class="shape-8" src="img/coming-soon-shape/shape-8.svg" alt="#" />
-        <img class="shape-9" src="img/coming-soon-shape/shape-9.svg" alt="#" />
-      </div>
-
-      <div class="coming-soon-shape-right">
-        <img class="shape-4" src="img/coming-soon-shape/shape-4.svg" alt="#" />
-        <img class="shape-5" src="img/coming-soon-shape/shape-5.svg" alt="#" />
-      </div>
+    <section class="portfolio-about-area">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-12">
-            <div class="coming-soon-content">
-              <h1 class="coming-soon-title">Coming Soon</h1>
+          <div class="col-12">
+            <div class="portfolio-about-tab-inner">
+              <div class="row">
+                <div class="col-12">
+                  <!-- Tab Menu -->
+                  <div class="portfolio-about-tab-menu">
+                    <div class="list-group" id="list-tab" role="tablist">
+                      <a
+                        class="list-group-item active"
+                        data-bs-toggle="list"
+                        href="#portfolio"
+                        role="tab"
+                      >
+                        Portfolio
+                      </a>
+                      <a
+                        class="list-group-item"
+                        data-bs-toggle="list"
+                        href="#about"
+                        role="tab"
+                      >
+                        About
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <!-- Tab Details -->
+                  <div class="portfolio-about-tab-details">
+                    <div class="tab-content" id="nav-tabContent">
+                      <!-- Tab One -->
+                      <div
+                        class="tab-pane fade show active"
+                        id="portfolio"
+                        role="tabpanel"
+                      >
+                        <div class="portfolio-project-main">
+                          <div class="portfolio-single">
+                            <div class="portfolio-single-img">
+                              <a
+                                href="img/project/project-1.svg"
+                                data-fancybox="photo"
+                                class="image-view"
+                              >
+                                <img src="img/project/project-1.svg" alt="#"
+                              /></a>
+                            </div>
+                          </div>
+                          <div class="portfolio-single">
+                            <div class="portfolio-single-img">
+                              <a
+                                href="img/project/project-1.svg"
+                                data-fancybox="photo"
+                                class="image-view"
+                              >
+                                <img src="img/project/project-1.svg" alt="#"
+                              /></a>
+                            </div>
+                          </div>
+                          <div class="portfolio-single">
+                            <div class="portfolio-single-img">
+                              <a
+                                href="img/project/project-1.svg"
+                                data-fancybox="photo"
+                                class="image-view"
+                              >
+                                <img src="img/project/project-1.svg" alt="#"
+                              /></a>
+                            </div>
+                          </div>
+                          <div class="portfolio-single">
+                            <div class="portfolio-single-img">
+                              <a
+                                href="img/project/project-1.svg"
+                                data-fancybox="photo"
+                                class="image-view"
+                              >
+                                <img src="img/project/project-1.svg" alt="#"
+                              /></a>
+                            </div>
+                          </div>
+                          <div class="portfolio-single">
+                            <div class="portfolio-single-img">
+                              <a
+                                href="img/project/project-1.svg"
+                                data-fancybox="photo"
+                                class="image-view"
+                              >
+                                <img src="img/project/project-1.svg" alt="#"
+                              /></a>
+                            </div>
+                          </div>
+                          <div class="portfolio-single">
+                            <div class="portfolio-single-img">
+                              <a
+                                href="img/project/project-1.svg"
+                                data-fancybox="photo"
+                                class="image-view"
+                              >
+                                <img src="img/project/project-1.svg" alt="#"
+                              /></a>
+                            </div>
+                          </div>
+                          <div class="portfolio-single">
+                            <div class="portfolio-single-img">
+                              <a
+                                href="img/project/project-1.svg"
+                                data-fancybox="photo"
+                                class="image-view"
+                              >
+                                <img src="img/project/project-1.svg" alt="#"
+                              /></a>
+                            </div>
+                          </div>
+                          <div class="portfolio-single">
+                            <div class="portfolio-single-img">
+                              <a
+                                href="img/project/project-1.svg"
+                                data-fancybox="photo"
+                                class="image-view"
+                              >
+                                <img src="img/project/project-1.svg" alt="#"
+                              /></a>
+                            </div>
+                          </div>
+                          <div class="portfolio-single">
+                            <div class="portfolio-single-img">
+                              <a
+                                href="img/project/project-1.svg"
+                                data-fancybox="photo"
+                                class="image-view"
+                              >
+                                <img src="img/project/project-1.svg" alt="#"
+                              /></a>
+                            </div>
+                          </div>
+                          <div class="portfolio-single">
+                            <div class="portfolio-single-img">
+                              <a
+                                href="img/project/project-1.svg"
+                                data-fancybox="photo"
+                                class="image-view"
+                              >
+                                <img src="img/project/project-1.svg" alt="#"
+                              /></a>
+                            </div>
+                          </div>
+                          <div class="portfolio-single">
+                            <div class="portfolio-single-img">
+                              <a
+                                href="img/project/project-1.svg"
+                                data-fancybox="photo"
+                                class="image-view"
+                              >
+                                <img src="img/project/project-1.svg" alt="#"
+                              /></a>
+                            </div>
+                          </div>
+                          <div class="portfolio-single">
+                            <div class="portfolio-single-img">
+                              <a
+                                href="img/project/project-1.svg"
+                                data-fancybox="photo"
+                                class="image-view"
+                              >
+                                <img src="img/project/project-1.svg" alt="#"
+                              /></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Tab Two -->
+                      <div class="tab-pane fade" id="about" role="tabpanel">
+                        <div class="about-work-main">
+                          <div class="about-work-main-content">
+                            <p class="about-work-text">
+                              I’m a passionate, well-organized, efficient, and
+                              self-motivated 22-year-old creative designer with
+                              innovative ideas and a unique approach to
+                              Visualize. Experienced in developing designs for
+                              print media, online websites, motion graphics,
+                              marketing & advertising materials. Tremendous
+                              experience in successful design projects for small
+                              agencies and enterprise clients.
+                            </p>
+                            <p class="about-work-text m-0">
+                              As a personable and dependable Graphic designer
+                              with 2+ years of expertise in the demonstrated
+                              history of working in a digital agency and 5+
+                              years of experience in the field of (print and
+                              digital media) design, Completed key 30+ product
+                              design projects for 10+ clients annually within
+                              Creativaim, Design code, and Buymode.
+                            </p>
+                          </div>
+                          <div class="about-work-single">
+                            <div class="section-head">
+                              <div class="section-head-icon-main">
+                                <span class="section-head-icon"
+                                  ><img src="img/service-icon.svg" alt="#"
+                                /></span>
+                              </div>
+                              <h4 class="section-head-title">Services</h4>
+                              <p class="section-head-text">
+                                Provide a full-service branding solution
+                                including Logo design, Brand visualization, and
+                                motion <br />
+                                graphics that can help you establish a strong
+                                visual identity for your business.
+                              </p>
+                            </div>
+                            <div class="about-work-single-widget">
+                              <h6 class="about-work-single-widget-title">
+                                Logo Design
+                              </h6>
+                              <p class="about-work-single-widget-text">
+                                The service is to create visual identities for
+                                businesses and organizations. This may involve
+                                creating a unique symbol, mark, or icon that
+                                represents the company's brand, as well as
+                                designing typography and color schemes to be
+                                used in conjunction with the logo. Will provide
+                                guidelines on how to use the logo correctly and
+                                consistently across different media, such as
+                                online, print, and promotional materials.
+                              </p>
+                              <p class="about-work-single-widget-text m-0">
+                                As a logo designer, my job isn't to make a
+                                pretty design or something that looks cool. I
+                                have to design something that would give my
+                                clients' businesses more traction, more revenue,
+                                and more of a presence in the world.
+                              </p>
+                            </div>
+                            <div class="about-work-single-widget">
+                              <h6 class="about-work-single-widget-title">
+                                Brand Visualization
+                              </h6>
+                              <p class="about-work-single-widget-text">
+                                A successful brand visualization should be
+                                immediately recognizable and easily
+                                distinguishable from competitors. It should also
+                                be flexible and adaptable to different contexts
+                                and mediums, while still maintaining a
+                                consistent look and feel. It also should evoke
+                                the emotions, values, and promise the brand
+                                wants to convey.
+                              </p>
+                              <p class="about-work-single-widget-text m-0">
+                                I can help you to achieve a comprehensive Brand
+                                Visualization by creating a visual
+                                representation that is memorable and impactful,
+                                providing guidelines for its usage, and creating
+                                a visual language to be used in advertising and
+                                other marketing materials.
+                              </p>
+                            </div>
+                            <div class="about-work-single-widget">
+                              <h6 class="about-work-single-widget-title">
+                                Motion Graphics
+                              </h6>
+                              <p class="about-work-single-widget-text">
+                                As a Motion Graphics artist, I specialize in
+                                creating animated elements, such as title
+                                sequences, infographics, and visual effects for
+                                videos. I use the software Adobe After Effects
+                                to create these animations and incorporate them
+                                into videos for a variety of different projects,
+                                such as commercials, music videos, and
+                                documentaries.
+                              </p>
+                              <p class="about-work-single-widget-text m-0">
+                                I am offering my services to create visually
+                                stunning and memorable Motion Graphics for your
+                                video projects and marketing materials such as
+                                product promotion animation. For your social
+                                media and websites.
+                              </p>
+                            </div>
+                          </div>
+                          <div class="about-work-single">
+                            <div class="section-head">
+                              <div class="section-head-icon-main">
+                                <span class="section-head-icon"
+                                  ><img src="img/skill-icon.svg" alt="#"
+                                /></span>
+                              </div>
+                              <h4 class="section-head-title">Skills</h4>
+                              <p class="section-head-text">
+                                With 3+ years of experience in the solid
+                                understanding of printing solutions and 2+ years
+                                of <br />
+                                working experience in a digital agency, looking
+                                forward to think outside the box.
+                              </p>
+                            </div>
+                            <div class="about-work-single-widget">
+                              <h6 class="about-work-single-widget-title">
+                                Digital Media
+                              </h6>
+                              <p class="about-work-single-widget-text m-0">
+                                Check out my portfolio for my expertise in
+                                creating digital media and marketing materials
+                                such as Social media posts, Web banners, etc.
+                                Also to get an idea about my personal Design
+                                style.
+                              </p>
+                            </div>
+                            <div class="about-work-single-widget">
+                              <h6 class="about-work-single-widget-title">
+                                Print Media
+                              </h6>
+                              <p class="about-work-single-widget-text m-0">
+                                My design career started in a studio. After
+                                that, I worked on some printing presses. I also
+                                ran the printing machine. So I have a very good
+                                understanding of printing materials such as
+                                Paper, PVC Banners, Newspapers, Magazines,
+                                Brochures, Posters, Books, etc, and CMYK colors.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Tab Details -->
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- End Coming Soon Area -->
 
-    <!-- Contact Area -->
-    <footer class="contact-area">
+    <section id="contact" class="contact-area">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 offset-lg-3 col-md-6 offset-md-3 col-12">
-            <div class="contact-content">
-              <span class="contact-cont-question">Questions?</span>
-              <h2 class="contact-cont-title">Contact us</h2>
-              <p class="contact-cont-info">
-                Mathiastrasse 24-26, 50676 Köln <br />
-                <a href="tel:+49 1626720058">+49 1626720058</a> <br /><a
-                  href="mailto:roma@talkies.io"
-                  >roma@talkies.io</a
-                >
-              </p>
+          <div class="col-12">
+            <div class="section-head">
+              <div class="section-head-icon-main">
+                <span class="section-head-icon"
+                  ><img src="img/phone-icon.svg" alt="#"
+                /></span>
+              </div>
+              <h4 class="section-head-title">Contact info</h4>
             </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="contact-information">
+              <div class="contact-single-information">
+                <h6 class="contact-single-information-title">Mail</h6>
+                <p class="contact-single-information-text">
+                  <a href="mailto:author.farhad@gmail.com"
+                    >author.farhad@gmail.com</a
+                  >
+                </p>
+              </div>
+              <div class="contact-single-information">
+                <h6 class="contact-single-information-title">Call</h6>
+                <p class="contact-single-information-text">
+                  <a href="tel:+8801881528441">+880 1881 528 441</a>
+                </p>
+                <p class="contact-single-information-text">
+                  <a href="tel:+8801884084922">+880 1884 084 922</a>
+                </p>
+              </div>
+              <div class="contact-information-social">
+                <ul class="contact-information-social-list">
+                  <li>
+                    <a href="#" target="_blank"
+                      ><img src="img/social-icon/whatsapp.svg" alt="#"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank"
+                      ><img src="img/social-icon/telegram.svg" alt="#"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank"
+                      ><img src="img/social-icon/skype.svg" alt="#"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p class="footer-text">
+              © Farhad Graphics. 2022 All rigths reserved
+            </p>
           </div>
         </div>
       </div>
     </footer>
-    <!-- End Contact Area -->
 
-    <!-- Scrool Top -->
-    <a href="#" class="scrollToTop"><i class="icofont-long-arrow-up"></i></a>
+    <!-- back to top start -->
+    <div class="progress-wrap">
+      <svg
+        class="progress-circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+    </div>
+    <!-- back to top end -->
 
     <!-- Jquery JS -->
     <script src="js/jquery.min.js"></script>
@@ -273,6 +609,13 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- Modernizer JS -->
     <script src="js/modernizer.min.js"></script>
+    <!-- CounterUp JS -->
+    <script src="js/counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <!-- FancyBox JS -->
+    <script src="js/fancybox.min.js"></script>
+    <!-- BackToTop JS -->
+    <script src="js/backToTop.js"></script>
     <!-- Main JS -->
     <script src="js/active.js"></script>
   </body>
